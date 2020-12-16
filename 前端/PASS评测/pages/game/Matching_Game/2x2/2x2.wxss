@@ -1,0 +1,53 @@
+page {
+  position: relative;
+  height: 100%;
+  background-color: #F6F6F6
+}
+.rotateCtn {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  left: 15%;
+  bottom: 25%;
+  transform-style: preserve-3d;
+}
+.frame {
+  position: absolute;
+  margin-left: 190rpx;
+  height: 100%;
+  width: 100%;
+}
+.frame image {
+  height: 150rpx;
+  width: 150rpx;
+  border-radius: 40rpx;
+}
+.front {
+  animation:front 1s linear 1;
+  backface-visibility: hidden;
+}
+.back {
+  animation:back 1s linear 1;
+}
+@keyframes front {
+  from {
+    transform: rotateY(30deg);
+  } 
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes back {
+  from {
+    transform: rotateY(-30deg);
+  } 
+  to {
+    transform: rotateY(0deg);
+  }
+}
+.z1 {
+  z-index: 5
+}
+.z2 {
+  z-index: 6
+}

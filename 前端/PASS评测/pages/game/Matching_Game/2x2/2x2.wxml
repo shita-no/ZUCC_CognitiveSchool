@@ -1,0 +1,10 @@
+<view class = 'rotateCtn'>
+  <!--背面的框 -->
+  <view class = 'frame {{class1}}'>
+    <image src = "{{imageUrl[num]}}"/>
+  </view>
+  <!--正面的框 -->
+  <view class = 'frame {{class2}}'>
+    <image src = "../../../../图片素材/block.png"/>
+  </view>
+</view>

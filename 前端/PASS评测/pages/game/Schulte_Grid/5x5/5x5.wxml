@@ -1,0 +1,10 @@
+<view class = "bc_cavas">
+    <view class = "bc" wx:for = "{{numbers}}" wx:for-item = "row" >
+      <view id = "{{item}}" wx:for = "{{row}}" class = "bc_ bc_{{item}}" bindtap = "clickBlock">
+        <view class = "number">{{item}}</view>
+      </view>
+    </view>
+  </view>
+<modal class = "modal" hidden = "{{modalHidden}}" bindconfirm = "modalChange">
+  <view>恭喜你完成测试</view>
+</modal>
