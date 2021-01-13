@@ -1,0 +1,32 @@
+<van-toast id="van-toast" />
+<image class = "img" src = "https://wx4.sinaimg.cn/mw690/006avIczly1glt80tsjywj30u01r3ajp.jpg" />
+<view class = "time" hidden = "{{showTime}}">倒计时 {{time}}</view>
+<view class = "level_{{level}}bc_cavas">
+  <view class = "bc" wx:for = "{{numbers}}" wx:for-item = "row" >
+    <view id = "{{item}}" wx:for = "{{row}}" class = "level_{{level}}bc_ level_{{level}}bc_{{item}}" bindtap = "clickBlock">
+      <view class = "level_{{level}}number">{{item}}</view>
+    </view>
+  </view>
+</view>
+<van-overlay show="{{show1}}" custom-style = "background-color: transparent" bind:click = "jumpToMain">
+  <view class="wrapper">
+    <image class = "img2" src = "../../image/finish.png"/>
+    <view class = "score"/>
+    <view class = "scoreMsg">获得</view>
+    <view class = "scoreMsg2 gradient-text-{{scoreType}}"> {{score}} </view>
+    <view class = "scoreMsg3">分!!</view>
+  </view>
+</van-overlay>
+<van-overlay show="{{show}}" bind:click = "teachHide">
+  <view class = "wrapper1">
+    <view class = "title">舒尔特方块</view>
+    <view class = "describe">游戏说明：</view>
+    <view class = "detail">从方块中按顺序点击从1开始的数字</view>
+    <image src = "https://wx4.sinaimg.cn/mw690/006avIczly1gmf58m12s8g30hs0s844k.gif" class = "showImg"/>
+    <view class = "close_{{closeType}}">点击任意处关闭教程</view>
+  </view>
+</van-overlay>
+<van-overlay show="{{show5}}" custom-style = "background-color: transparent">
+  <view class = "goStart">3秒后进入正式测试</view>
+</van-overlay>
+<van-toast id="custom-selector" />

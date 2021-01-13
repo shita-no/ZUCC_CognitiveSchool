@@ -1,0 +1,120 @@
+.intro {
+  margin: 30px;
+  text-align: center;
+}
+.convas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+}  
+
+.time{
+  float:right;
+  position: flex;
+  margin-right: 12px;
+  margin-top: 6px;
+}
+
+.item_row{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 150rpx;
+  justify-content: center;
+  margin-top: 2rpx;
+  margin-bottom: 2rpx;
+}
+.item_cell{
+  display: flex;
+  flex-direction: column;
+  width: 150rpx;
+  height: 150rpx;
+  border: solid 1rpx;
+  border-radius: 10rpx;
+  margin: 2rpx 2rpx 2rpx 2rpx;
+  background-color: thistle;
+}
+
+item_0{
+  src:'./img/num/solid/0.png';
+}
+
+.view_class {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game-container {
+  margin-top: 40px;
+  position: relative;
+  padding: 15px;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -ms-touch-action: none;
+  touch-action: none;
+  background: #bbada0;
+  border-radius: 6px;
+  width: 500px;
+  height: 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.view_text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bubble{ 
+  position: relative;
+  overflow: hidden;
+ }
+ .bubble:after{
+  content: "";
+  background: #999;
+  position: absolute; 
+  width: 750rpx;
+  height: 750rpx;
+  left: calc(50% - 375rpx);
+  top: calc(50% - 375rpx);
+  opacity: 0;
+  margin: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+ }
+ .bubble:active:after {
+  transform: scale(0);
+  opacity: 1;
+  transition: 0s;
+ }
+ .text_style{
+  font-weight: 500;
+  font-size: 22px;
+ }
+ .img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.dialog{
+  border:1px solid #ff962d;
+  background-color:rgb(249, 241, 211);
+}
+.describe{
+  height: 100%;
+  width: 100%;
+}
+.des{
+  color:white;
+  font-size:50rpx;
+  margin-left: 200rpx;
+}

@@ -1,0 +1,56 @@
+
+<view class="user_info_wrap">
+  <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+    <image class="user_bg"  src="{{userinfo.avatarUrl}}" ></image>
+    <view class="user_info">
+      <image class="user_icon" src="{{userinfo.avatarUrl}}"></image>
+      <view class="user_name">{{userinfo.nickName}}</view>
+      
+      <view class="user_years">
+
+        <input class="user_old" type="number" bindinput="oldInput" value="{{old}}"></input>
+        <text class="jtext">岁</text>
+      </view>
+      
+    </view>
+  </view>
+  <view wx:else class="user_btn">
+    <button id="button" type="default" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" > 登录 </button>
+  </view>
+</view>
+<view class="user_content">
+  
+  <view class="user_main">
+    <view class="history_wrap">
+      <navigator>
+        <view class="his_num">{{tongshi}}</view>
+        <view class="his_name">同时性加工</view>
+      </navigator>
+      <navigator url="/pages/collect/index">
+        <view class="his_num">{{jishi}}</view>
+        <view class="his_name">继时性加工</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">{{jihua}}</view>
+        <view class="his_name">计划</view>
+      </navigator>
+      <navigator>
+        <view class="his_num">{{zhuyi}}</view>
+        <view class="his_name">注意</view>
+      </navigator>
+    </view>
+    <!-- 应用信息相关 -->
+    <view class="app_info_wrap">
+      <view class="app_info_item app_info_contact">
+        <text>联系客服</text>
+        <text>***-***-****</text>
+      </view>
+      <navigator url="/pages/feedback/feedback" class="app_info_item">意见反馈</navigator>
+      <view class="app_info_item">关于我们</view>
+    </view>
+    <!-- 推荐 -->
+    <view class="recommend_wrap">
+      点击右上角分享按钮，分享本程序给朋友！
+    </view>
+  </view>
+</view>

@@ -1,0 +1,47 @@
+view{
+    color:var(--themeColor);
+}
+page{
+  background:#FFFFFF
+}
+.games{
+  margin-left: 35rpx;
+  width: 150rpx;
+  height: 300rpx;
+}
+.firg{
+  position: absolute;
+  left: 35rpx;
+  top: 10rpx;
+}
+.secg{
+  position: absolute;
+  left: 430rpx;
+  top: 150rpx;
+}
+.game2{
+  margin-left: 35rpx;
+  margin-top: 900rpx;
+  width:150rpx;
+  height: 300rpx;
+}
+.thrg{
+  position: absolute;
+  left: 50rpx;
+  top: 650rpx;
+}
+.yuki{
+  position: absolute;
+  top: 81rpx;
+  left:650rpx
+}
+.yukis{
+  position: absolute;
+  top: 585rpx;
+  left:110rpx
+}
+.foug{
+  position: absolute;
+  left: 360rpx;
+  top: 650rpx;
+}

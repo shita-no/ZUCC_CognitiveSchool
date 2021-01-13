@@ -1,0 +1,27 @@
+<view class="clouds">
+    <image class="c1" style="width: 200px; height: 300px; background-color: #FFFFFF;" src="../../icons/云.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    <image class="c2"  style="width: 150px; height: 260px; background-color: #FFFFFF;" src="../../icons/云.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+</view>
+
+
+
+<view class="games">
+    <view bindtap="jumpg1">
+        <image class="firg" style="width: 200px; height: 300px; background-color: #FFFFFF;" src="../../icons/try1.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <view bindtap="jumpg2">
+        <image class="secg"  style="width: 150px; height: 260px; background-color: #FFFFFF;" src="../../icons/try2.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+</view>
+
+<view class="games2">
+    <view bindtap="jumpg3">
+        <image class="thrg"  style="width: 150px; height: 260px; background-color: #FFFFFF;" src="../../icons/try3.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+    <image class="yuki"  style="width: 50px; height: 50px; background-color: #FFFFFF;" src="../../icons/yuki_k.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    <image class="yukis"  style="width: 50px; height: 50px; background-color: #FFFFFF;" src="../../icons/yukisingk.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    <view bindtap="jumpg4">
+        <image class="foug" style="width: 200px; height: 300px; background-color: #FFFFFF;" src="../../icons/try4.png" mode="aspectFit" lazy-load="false" binderror="" bindload=""></image>
+    </view>
+</view>
+

@@ -1,0 +1,40 @@
+<image src="../../image/bg2.jpeg" class="img"></image>
+
+
+
+<van-overlay show = "{{hide}}" bindtap="turn_off" >
+  <text class="des">触摸跳过教程</text>
+  <image src="../../image/a.gif" class="describe"></image>
+</van-overlay>
+<van-toast id="van-toast" />
+<view>
+  <view class="time">
+  <text>倒计时</text>
+  <text class="text_style">{{time}}</text>
+</view>
+
+<view class="dialog">
+  <text>{{tips}} \n</text>
+  <text class="center text_style">记忆时间:{{memory_time}}</text>
+</view>
+</view>
+
+
+<view class="view_box">
+
+  <view class="view_class_1">
+    <view class = "bc" wx:for = "{{numbers}}" wx:for-item = "row" >
+      <view   class = "block_{{row}} bubble" bindtap = "clickBlock"></view>
+    </view>
+  </view>
+  <text>\n</text>
+  <view class="view_class">
+    <view class = "bc" wx:for = "{{color_block_touch}}" wx:for-item = "row" >
+      <view id = "{{row}}"  class = "block_{{row}} bubble" bindtap = "click_block"></view>
+    </view>
+  </view>
+  <text>\n</text>
+  <button type="primary" bindtap="click_button">重置</button>
+</view>
+
+

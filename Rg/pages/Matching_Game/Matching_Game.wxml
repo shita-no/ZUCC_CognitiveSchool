@@ -1,0 +1,66 @@
+<van-overlay show = "{{show}}" custom-style = "background-color: transparent"/>
+<image class = "img" src = "https://wx4.sinaimg.cn/mw690/006avIczly1gm66e7twxkj30b40jn0vk.jpg" />
+<van-toast id = "van-toast" mask/>
+<view class='main'>
+   <view class="box b1" animation="{{animationMaingoal}}" bindtap='rotateFn' data-id="goal" >
+     <image src="{{block}}"></image>
+   </view>
+   <view class="box b2" animation="{{animationBackgoal}}"  bindtap='rotateFn' data-id="0">
+     <image src="{{goalImage}}"></image>
+   </view>
+</view>
+<view class = "bc_cavas">
+  <!-- 理论可行但实际未能跑通的翻卡版本 -->
+  <view class = "bc" wx:for = "{{showImage}}" wx:for-item = "row">
+    <view id = "{{item}}" wx:for = "{{row}}">
+      <view class='level_{{level}}main'>
+        <view bindtap = "checkTheAnswer" class="level_{{level}}box b1" animation="{{item[1]}}" data-id="{{item[3]}}">
+          <image src="{{block}}" />
+        </view>
+        <view bindtap = "checkTheAnswer" class="level_{{level}}box b2" animation="{{item[2]}}" data-id="-1">
+          <image src="{{item[0]}}" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 一行行翻牌的版本，候选版本 -->
+  <!-- <view wx:if = "{{level==1}}" class = "bc" wx:for = "{{showImage}}" wx:for-item = "row" wx:for-index = "i">
+    <view class='level_{{level}}main'>
+      <view class="level_{{level}}box b1" animation="{{Main[i]}}" data-id="{{item[0][49]}}">
+        <image src="{{block}}" />
+      </view>
+      <view class="level_{{level}}box b2" animation="{{Back[i]}}" data-id="1">
+        <image src="{{row[0]}}" />
+      </view>
+    </view>
+    <view class='level_{{level}}main'>
+      <view class="level_{{level}}box b1" animation="{{Main[i]}}" data-id="{{item[1][49]}}">
+        <image src="{{block}}" />
+      </view>
+      <view class="level_{{level}}box b2" animation="{{Back[i]}}" data-id="1">
+        <image src="{{row[1]}}" />
+      </view>
+    </view>
+  </view> -->
+</view>
+<van-overlay show="{{show1}}" custom-style = "background-color: transparent" bind:click = "jumpToMain">
+  <view class="wrapper">
+    <image class = "img2" src = "../../image/finish.png"/>
+    <view class = "score"/>
+    <view class = "scoreMsg">获得</view>
+    <view class = "scoreMsg2 gradient-text-{{one}}"> {{score}} </view>
+    <view class = "scoreMsg3">分!!</view>
+    <!-- <image class = "img2" src = "{{imageUrl[0]}}" /> -->
+    <!-- <button type = "primary">确定</button> -->
+  </view>
+</van-overlay>
+<van-overlay show = "{{show2}}" bind:click = "close">
+  <view class = "wrapper1">
+    <view class = "title">记忆翻牌</view>
+    <view class = "describe">游戏说明：</view>
+    <view class = "detail">从下方卡片中找出上方翻开的卡片在哪</view>
+    <image src = "https://wx3.sinaimg.cn/mw690/006avIczly1gmfboqgax4g30hs0s8e81.gif" class = "tipImg" />
+    <view class = "close_{{closeType}}">点击任意处关闭教程</view>
+  </view>
+</van-overlay>
+<van-toast id="custom-selector" />

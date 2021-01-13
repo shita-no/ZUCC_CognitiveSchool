@@ -1,0 +1,29 @@
+<image src="../../image/bg2.jpeg" class="img"></image>
+
+<van-overlay show = "{{hide}}" bindtap="turn_off" >
+  <text class="des">触摸跳过教程</text>
+  <image src="../../image/b.gif" class="describe"></image>
+</van-overlay>
+
+
+<van-toast id="van-toast" />
+<view class="time">
+  <text>倒计时</text>
+  <text class="text_style">{{time}}</text>
+</view>
+
+<view class="convas">
+  <view wx:for = "{{content}}" wx:for-item = "row" class="item_row">
+    <view id = "{{cell}}" wx:for = "{{row}}" wx:for-item = "cell" class = "item_cell bubble" bindtap = "click_block">
+      <image src="{{cell}}" mode="heightFix"></image>
+    </view>
+  </view>
+</view>
+
+<view class="view_text dialog">
+  <text>请找出以下描述的数字:\n</text>
+  <text class="text_style">{{description}}</text>
+</view>
+
+
+<text></text>

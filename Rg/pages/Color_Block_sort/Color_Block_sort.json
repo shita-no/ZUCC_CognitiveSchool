@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "同时性加工测试",
+  "backgroundColor":"#faf8ef",
+    "backgroundTextStyle":"light",
+    "disableScroll":true,
+  "usingComponents": {"van-toast": "../../dist/toast/index",
+    "van-overlay": "../../dist/overlay/index",
+    "van-transition": "../../dist/transition/index"}
+  
+}

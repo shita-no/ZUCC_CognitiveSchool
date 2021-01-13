@@ -1,0 +1,74 @@
+<view class="container">
+    <canvas canvas-id="radarCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+<view >
+    <text class="top">分析与建议</text>
+</view>
+<text>\n</text>
+<view wx:if="{{tongshid>=80}}" class="wenzi">
+    <text>你的同时性加工能力为S，超越了83.6%的同龄人。在同时性加工能力上你真是太棒了！这代表你的整合能力非常强，继续保持！</text>
+</view>
+<view wx:elif="{{tongshid>=60}}" class="wenzi">
+    <text>你的同时性加工能力为A，超越了65.4%的同龄人。在同时性加工能力上你的能力还算不错,是普通人中的佼佼者！</text>
+</view>
+<view wx:elif="{{tongshid>=40}}" class="wenzi">
+    <text>你的同时性加工能力为B，超越了49%的同龄人。在同时性加工能力上还有一点不足哦！可以多多练习这方面的能力！</text>
+</view>
+<view wx:elif="{{tongshid>=20}}" class="wenzi">
+    <text>你的同时性加工能力为C，超越了23.6%的同龄人。是不是测试的时候走神了呢？多试几次吧！</text>
+</view>
+<view wx:elif="{{tongshid>=0}}" class="wenzi">
+    <text>你还没有完成同时性测试哦！快去完成水果记忆吧!</text>
+</view>
+<text>\n</text>
+
+<view wx:if="{{jishid>=80}}" class="wenzi">
+    <text>你的继时性加工能力为S，超越了84.6%的同龄人。在继时性加工能力上你真是太棒了！这代表你的记忆能力非常强，继续保持！</text>
+</view>
+<view wx:elif="{{jishid>=60}}" class="wenzi">
+    <text>你的继时性加工能力为A，超越了69.4%的同龄人。在继时性加工能力上你的能力还算不错,是普通人中的佼佼者！</text>
+</view>
+<view wx:elif="{{jishid>=40}}" class="wenzi">
+    <text>你的继时性加工能力为B，超越了47.2%的同龄人。在继时性加工能力上还有一点不足哦！可以多多练习这方面的能力！</text>
+</view>
+<view wx:elif="{{jishid>=20}}" class="wenzi">
+    <text>你的继时性加工能力为C，超越了19.8%的同龄人。是不是测试的时候走神了呢？多试几次吧！</text>
+</view>
+<view wx:elif="{{jishid>=0}}" class="wenzi">
+    <text>你还没有完成继时性测试哦！快去完成色块修理吧!</text>
+</view>
+<text>\n</text>
+
+<view wx:if="{{jihuad>=80}}" class="wenzi">
+    <text>你的计划能力为S，超越了89.8%的同龄人。在计划能力上你真是太棒了！这代表你的计划能力非常强，继续保持！</text>
+</view>
+<view wx:elif="{{jihuad>=60}}" class="wenzi">
+    <text>你的计划能力为A，超越了73.7%的同龄人。在计划能力上你的能力还算不错,是普通人中的佼佼者！</text>
+</view>
+<view wx:elif="{{jihuad>=40}}" class="wenzi">
+    <text>你的计划能力为B，超越了42.6%的同龄人。在计划能力上还有一点不足哦！可以多多练习这方面的能力！</text>
+</view>
+<view wx:elif="{{jihuad>=20}}" class="wenzi">
+    <text>你的计划能力为C，超越了21.1%的同龄人。是不是测试的时候走神了呢？多试几次吧！</text>
+</view>
+<view wx:elif="{{jihuad>=0}}" class="wenzi">
+    <text>你还没有完成计划测试哦！快去完成方块排序吧!</text>
+</view>
+<text>\n</text>
+
+<view wx:if="{{zhuyid>=80}}" class="wenzi">
+    <text>你的注意能力为S，超越了90.1%的同龄人。在注意能力上你真是太棒了！这代表你的注意力非常强，继续保持！</text>
+</view>
+<view wx:elif="{{zhuyid>=60}}" class="wenzi">
+    <text>你的注意能力为A，超越了68.5%的同龄人。在注意能力上你的能力还算不错,是普通人中的佼佼者！</text>
+</view>
+<view wx:elif="{{zhuyid>=40}}" class="wenzi">
+    <text>你的注意能力为B，超越了43.3%的同龄人。在注意能力上还有一点不足哦！可以多多练习这方面的能力！</text>
+</view>
+<view wx:elif="{{zhuyid>=20}}" class="wenzi">
+    <text>你的注意能力为C，超越了22.5%的同龄人。是不是测试的时候走神了呢？多试几次吧！</text>
+</view>
+<view wx:elif="{{zhuyid>=0}}" class="wenzi">
+    <text>你还没有完成注意测试哦！快去完成方块分类吧!</text>
+</view>
+<text>\n</text>

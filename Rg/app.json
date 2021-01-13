@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/mine/mine",
+    "pages/index/index",
+    "pages/pick_num/pick_num",
+    "pages/Color_Block_sort/Color_Block_sort",
+    "pages/Matching_Game/Matching_Game",
+    "pages/Schulte_Grid/Schulte_Grid",
+    "pages/login/login",
+    "pages/mainpage/mainpage",
+    "pages/table/table",
+    "pages/feedback/feedback",
+    "pages/about/about"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#66ccff",
+    "navigationBarTitleText": "认知学堂",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#66ccff",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "游戏",
+      "iconPath": "icons/game.png",
+      "selectedIconPath": "icons/game.png"
+    },
+    {
+      "pagePath": "pages/table/table",
+      "text": "数据",
+      "iconPath": "icons/table.png",
+      "selectedIconPath": "icons/table.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "icons/person.png",
+      "selectedIconPath": "icons/person.png"
+    }]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
