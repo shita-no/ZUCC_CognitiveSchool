@@ -1,20 +1,22 @@
 游戏记录表
-gamescore:String格式，用于存储游戏分数，如通过8关，最后一关完成50&，存储格式为：8:50%
-id:游戏记录的id，主键，默认自动递增
-game_id:游戏的编号：如计划类游戏id为1，同时性加工游戏id为2，继时性加工游戏id为3，注意类游戏id为4
 gamer_id:通过小程序的接口获取到的一串String，用于区分用户
+cs，ms，ps，ss分别代表计划类，继时类，注意类，同时类得分
+csp，msp，psp，ssp分别代表用户在计划类，继时类，注意类，同时类得分是所有用户的前百分之几
 -- ----------------------------
 -- Table structure for game_record
 -- ----------------------------
-DROP TABLE IF EXISTS `game_record`;
-CREATE TABLE `game_record` (
-  `game_score` varchar(255) NOT NULL,
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `game_id` int(11) NOT NULL,
+CREATE TABLE `game` (
   `gamer_id` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`),
-  KEY `gamer_id` (`gamer_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+  `cs` int(11) NOT NULL,
+  `csp` double(22,2) DEFAULT NULL,
+  `ms` int(11) NOT NULL,
+  `msp` double(22,2) DEFAULT NULL,
+  `ps` int(11) NOT NULL,
+  `psp` double(22,2) DEFAULT NULL,
+  `ss` int(11) NOT NULL,
+  `ssp` double(22,2) DEFAULT NULL,
+  PRIMARY KEY (`gamer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 玩家信息表
 gamer_id:通过小程序的接口获取到的一串String，用于区分用户
